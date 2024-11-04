@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box2 {
+    color: rgb(11, 12, 12);
+    text-align: center;
+    padding: 20px 0;
+    transition: transform 0.1s ease;
+}
+
+.text-link {
+
+    text-decoration: none;
+    /* 去掉下划线 */
+    color: inherit;
+    /* 保持文字颜色与周围一致 */
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    /*超链接无下划线*/
+}
+
+a:hover {
+    text-decoration: underline;
+    /*鼠标放上去有下划线*/
+}
+
+
+.txt {
+    transition: transform 0.1s ease;
+}
+
+
+
+.pr {
+    margin-top: 30px;
+    position: relative;
+}
+
+.image-text-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 控制图片和文字之间的间距 */
+}
+
+.main-txt{
+    line-height: 2;
+    margin-right: 30px;
+}
+.text-slide1 {
+    text-align: right;
+    margin-top: 30px;
+    
+    transform: translateY(0);
+    /* 初始位置 */
+    transition: transform 0.3s ease-out;
+    /* 平滑的动态效果 */
+}
+.text-slide2 {
+    text-align: right;
+    margin-top: 30px;
+    transform: translateY(0);
+    /* 初始位置 */
+    transition: transform 0.3s ease-out;
+    /* 平滑的动态效果 */
+}
+.text-slide3 {
+    text-align: right;
+    margin-top: 30px;
+    transform: translateY(0);
+    /* 初始位置 */
+    transition: transform 0.3s ease-out;
+    /* 平滑的动态效果 */
+}
+
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.lyc {
+    position: relative;
+    margin-left: 50px;
+    width: 50%;
+    height: 50%;
+}
+
+
+h4 {
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+
+.port {
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+    transition: transform 0.3s ease;
+}
+
+.works {
+    transform: translateY(0);
+    /* 初始位置 */
+    transition: transform 0.3s ease-out;
+    /* 平滑的动态效果 */
+}
+
+.main-container {
+    width: 80%;
+    /* 大区域宽度 */
+    height: auto;
+    /* 大区域高度 */
+    margin: 0 auto;
+    /* 水平居中 */
+    display: flex;
+    justify-content: center;
+    /* 正方形容器水平居中 */
+    align-items: center;
+    /* 正方形容器垂直居中 */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* 图片样式 */
+.container img {
+    flex: 1 0 45%;
+    /* 使每张图片占容器宽度的45%，允许适应不同屏幕 */
+    height: auto;
+    /* 高度自适应 */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* 图片悬停时的效果 */
+.container img:hover {
+    transform: scale(1.05) translate(3px, -3px);
+}
+
+/* 四个角落的图片位置 */
+.top-left {
+    width: 500px;
+    /* 每张图片的固定宽度 */
+    height: 500px;
+    /* 每张图片的固定高度 */
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.top-right {
+    width: 500px;
+    /* 每张图片的固定宽度 */
+    height: 450px;
+    /* 每张图片的固定高度 */
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.bottom-left {
+    width: 500px;
+    /* 每张图片的固定宽度 */
+    height: 450px;
+    /* 每张图片的固定高度 */
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.bottom-right {
+    width: 450px;
+    /* 每张图片的固定宽度 */
+    height: 450px;
+    /* 每张图片的固定高度 */
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+/* 悬停效果：图片灰化 */
+.hover-container:hover img {
+    filter: grayscale(100%);
+}
+
+/* 悬停文本的样式 */
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(162, 17, 17);
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* 防止文本阻挡鼠标 */
+}
+
+/* 悬停时显示文本 */
+.hover-container:hover .hover-text {
+    opacity: 1;
+}
+
+.image {
+    position: absolute;
+    width: 50%;
+
+}
+
+
+
+
+
+.mail {
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.contact {
+    margin-top: 20px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 50px;
+}

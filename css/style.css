@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.text {
+    color: rgb(11, 12, 12);
+    text-align: center;
+    padding: 20px 0;
+    transition: transform 0.1s ease;
+}
+
+.txt {
+    transition: transform 0.1s ease;
+}
+
+header {
+    bottom: 100px;
+}
+
+
+.video-box {
+    position: relative;
+    height: auto;
+}
+
+video {
+    position: relative;
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    top: 100%;
+}
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.svg-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.pr {
+    position: relative;
+    margin-top: 250px;
+    text-align: center;
+
+}
+
+.text-slide {
+    line-height: 1.5;
+    margin-top: 30px;
+    transform: translateY(0);
+    /* 初始位置 */
+    transition: transform 0.3s ease-out;
+    /* 平滑的动态效果 */
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+.lyc {
+    position: relative;
+    margin-top: 50px;
+    width: 50%;
+    height: 50%;
+    animation: flowing2 3s infinite alternate;
+}
+
+@keyframes flowing2 {
+    0% {
+        transform: translateY(-20px);
+        /* 初始位置 */
+    }
+
+    50% {
+        transform: translateY(50px);
+        /* 向下移动 */
+    }
+
+    100% {
+        transform: translateY(-20px);
+        /* 返回初始位置 */
+    }
+}
+
+h4 {
+    font-size: 2rem;
+    margin-top: 50px;
+
+
+}
+
+
+.port {
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+    transition: transform 0.3s ease;
+}
+
+.works {
+    transform: translateY(0);
+    /* 初始位置 */
+    transition: transform 0.3s ease-out;
+    /* 平滑的动态效果 */
+}
+
+.main-container {
+    width: 80%;
+    /* 大区域宽度 */
+    height: auto;
+    /* 大区域高度 */
+    margin: 0 auto;
+    /* 水平居中 */
+    display: flex;
+    justify-content: center;
+    /* 正方形容器水平居中 */
+    align-items: center;
+    /* 正方形容器垂直居中 */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* 图片样式 */
+.container img {
+    flex: 1 0 45%;
+    /* 使每张图片占容器宽度的45%，允许适应不同屏幕 */
+    height: auto;
+    /* 高度自适应 */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* 图片悬停时的效果 */
+.container img:hover {
+    transform: scale(1.05) translate(3px, -3px);
+}
+
+/* 四个角落的图片位置 */
+.top-left {
+    width: 500px;
+    /* 每张图片的固定宽度 */
+    height: 500px;
+    /* 每张图片的固定高度 */
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.top-right {
+    width: 500px;
+    /* 每张图片的固定宽度 */
+    height: 450px;
+    /* 每张图片的固定高度 */
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.bottom-left {
+    width: 500px;
+    /* 每张图片的固定宽度 */
+    height: 450px;
+    /* 每张图片的固定高度 */
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.bottom-right {
+    width: 450px;
+    /* 每张图片的固定宽度 */
+    height: 450px;
+    /* 每张图片的固定高度 */
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.image {
+    position: absolute;
+    width: 50%;
+
+}
+
+
+
+
+
+.mail {
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.contact {
+    margin-top: 20px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 50px;
+}
