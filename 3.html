@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANART</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<main>
+    <div class="txt">
+        <h1>FAN ART</h1>
+        <div class=main-txt>
+            <p>KPOPアイドルが好きで、イラストを描きしました
+                <br> 色とりどりの表情と特徴を生かし、推しの魅力を最大限に引き出すように心がけました
+                <br>また、アクリルキーホルダーも制作しており、イラストを立体的に楽しむことができます
+            </p>
+        </div>
+    </div>
+    <script>
+        const textContainer = document.querySelector('.txt');
+
+        // 监听鼠标移动事件
+        document.addEventListener('mousemove', (e) => {
+            const { innerWidth, innerHeight } = window;
+            const x = (e.clientX / innerWidth - 0.5) * 10; // 鼠标水平偏移量
+            const y = (e.clientY / innerHeight - 0.5) * 10; // 鼠标垂直偏移量
+
+            // 更新文本的 transform 属性，使其产生微妙的移动效果
+            textContainer.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+
+</main>
+
+<body>
+    <div class="gallery">
+        <div class="illustration">
+            <img src="ILLUPIC/QQ图片20241105001537.jpg" alt="1" class="shrink-image">
+            <img src="ILLUPIC/QQ图片20241105001405.jpg" alt="1" class="shrink-image">
+            <img src="ILLUPIC/QQ图片20241105001533.jpg" alt="1" class="shrink-image">
+            <img src="ILLUPIC/ILLUPICIMG_4582.JPG" alt="1" class="shrink-image">
+        </div>
+    </div>
+    <div class="container">
+        <img src="ILLUPIC/QQ图片20230501142709.png" alt="1" class="shrink-image">
+    </div>
+    <div class="product">
+        <img src="ILLUPIC/ILLUPICIMG_6075.JPG" alt="1" class="shrink-image">
+        <img src="ILLUPIC/ILLUPICIMG_6076.JPG" alt="1" class="shrink-image">
+        <img src="ILLUPIC/ILLUPICIMG_6077.JPG" alt="1" class="shrink-image">
+        <img src="ILLUPIC/ILLUPICIMG_6078.JPG" alt="1" class="shrink-image">
+        <img src="ILLUPIC/ILLUPICIMG_6079.JPG" alt="1" class="shrink-image">
+        <img src="ILLUPIC/ILLUPICIMG_6080.JPG" alt="1" class="shrink-image">
+    </div>
+</body>
+    <div class="logo-container">
+        <a href="illustation.html" class="home-link">
+            <img src="image/ホームアイコン.png" alt="Home" class="home-icon">
+        </a>
+    </div>
+
+
+<footer>
+    <div class="txt">
+        <div class="use">
+            <p>
+                TOOLS:Photoshop,Adobe Illustrator,Procreate,SAI
+            </p>
+        </div>
+    </div>
+</footer>
+
+</html>

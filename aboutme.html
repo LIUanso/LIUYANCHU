@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIUYANCHU</title>
+    <link rel="stylesheet" href="css/styleab.css">
+</head>
+
+<body>
+
+    <div class="box2">
+        <a href="index.html" class="text-link">ESCAPE TIME</a>
+    </div>
+
+    </div>
+
+    <main class="txt">
+        <div class="pr">
+            <h1>About Me</h1>
+            <div class="image-text-container">
+                <img src="image/about me.png" alt="LIUYANCHU" class="lyc">
+                <div class=main-txt>
+                    <h4>LIUYANCHU 劉晏楚</h4>
+                    <p class="text-slide1">
+                        1999.02.28
+                        中国四川出身<br>
+                        2018.10-2020.03
+                        メロス言語学院<br>
+                        2020.04-2024.03
+                        東京造形大学<br>造形学部・デザイン学科・インダストリアルデザイン
+                    </p>
+                    <p class="text-slide2">
+                       好奇心旺盛でオープンマインドな人<br>この世のあらゆるものに興味を持ち、新しいことを試すことを恐れない<br>未知やちょっと変なものに興味があって、最近sfの映画と小説にハマっている<br>民俗文化がわかるエピソードや童話も好き<!--人生で一番好きな行動は逃げる。中から逃げて、トラブルから逃げて、現実から逃げる。全てのことが逃げれば逃げよう。いつも非常口から脱出、非常口は日常口 -->
+                    </p>
+                    <p class="text-slide3">豆知識：パンダの毛はめちゃくちゃ硬いみたいよ</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            const textContainer = document.querySelector('.txt');
+
+            // 监听鼠标移动事件
+            document.addEventListener('mousemove', (e) => {
+                const { innerWidth, innerHeight } = window;
+                const x = (e.clientX / innerWidth - 3) * 10; // 鼠标水平偏移量
+                const y = (e.clientY / innerHeight - 3) * 10; // 鼠标垂直偏移量
+
+                // 更新文本的 transform 属性，使其产生微妙的移动效果
+                textContainer.style.transform = `translate(${x}px, ${y}px)`;
+            });
+        </script>
+
+
+        <div class="port">
+            <h2 class="Works">Works</h2>
+            <div class="main-container">
+                <div class="container">
+                    <div class="PRODUCT">
+                        <a href="product.html"class="hover-container"><img src="pic/works01.png" alt="works01" class="top-left">
+                            <span class="hover-text">PRODUCT</span>
+                        </a>
+                    </div>
+                    <div class="UI·UX">
+                        <a href="uiux.html"class="hover-container"><img src="pic/works02.png" alt="works02" class="top-right">
+                            <span class="hover-text">UI/UX</span>
+                        </a>
+                    </div>
+                    <div class="ILLUSTRATION">
+                        <a href="illustation.html"class="hover-container"><img src="pic/works03.png" alt="works03" class="bottom-left">
+                            <span class="hover-text">ILLUSTRATION</span>
+                        </a>
+                    </div>
+                    <div class="OTHER">
+                        <a href="other.html"class="hover-container"><img src="pic/works04.png" alt="works04" class="bottom-right">
+                        <span class="hover-text">OTHER</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="mail">
+            <h3>Contact</h3>
+            <p class="contact">liuyc223@gmail.com<br>@tuotuo223</p>
+        </div>
+    </footer>
+</body>
